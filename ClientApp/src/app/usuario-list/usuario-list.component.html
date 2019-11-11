@@ -1,0 +1,29 @@
+
+<div>
+    <h1 class="h2">Listar Usuario</h1>
+</div>
+<div>
+    <table class='table table-striped'>
+        <thead>
+            <tr>
+            <tr>
+                <th>Codigo Usuario</th>
+                <th>Nombre Usuario</th>
+                <th>Telefono</th>
+                <th>Direccion</th>
+                <th>Sexo</th>
+                <th>Edad</th>
+                <th>Ver</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let usuario of usuarios">
+            <td>{{usuario.id}}</td>
+            <td>{{usuario.nomCompleto}}</td>
+            <td>{{usuario.telefono}}</td>
+            <td>{{usuario.direccion}}</td>
+            <td>{{usuario.sexo}}</td>
+            <td>{{usuario.edad}}</td>
+            <td><a routerLink="/usuarioedit/{{usuario.id}}">ver</a></td>
+        </tr>
+    </table>
+</div>

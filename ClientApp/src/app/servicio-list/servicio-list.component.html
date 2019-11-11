@@ -1,0 +1,23 @@
+<div>
+    <h1 class="h2">Listar</h1>
+</div>
+<div>
+    <table class='table table-striped'>
+        <thead>
+            <tr>
+            <tr>
+                <th>Codigo Servicio</th>
+                <th>Nombre Servicio</th>
+                <th>Descripcion</th>
+                <th>Ver</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let servicio of servicios">
+            <td>{{ servicio.id }}</td>
+            <td>{{ servicio.nomServicio }}</td>
+            <td>{{ servicio.descripcion }}</td>
+            <td><a routerLink="/servicioedit/{{servicio.id}}">ver</a></td>
+        </tr>
+        
+    </table>
+</div>

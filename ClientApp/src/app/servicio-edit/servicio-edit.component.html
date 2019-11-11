@@ -1,0 +1,45 @@
+<div *ngIf="usuario">
+    <div>
+        <h1 class="h2">Detalle Servicio</h1>
+    </div>
+    <p>Editar/Eliminar Usuario</p>
+    <div class="form-group">
+        <label>Id:
+            {{usuario.CodServicio}}
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Nombre Servicio:
+            <input [(ngModel)]="usuario.NomServicio" class="form-control" placeholder="digite Nombre Servicio" type="text" />
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Descripción:
+            <input [(ngModel)]="usuario.Descripcion" class="form-control" placeholder="digite telefono " type="text" />
+        </label>
+    </div>
+    <!-- <div class="form-group">
+        <label>Direccion:
+            <input [(ngModel)]="usuario.Direccion" class="form-control" placeholder="digite Direccion " type="text" />
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Sexo:
+            <input [(ngModel)]="usuario.Sexo" class="form-control" placeholder="digite sexo " type="text" />
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Edad:
+            <input [(ngModel)]="usuario.Edad" class="form-control" placeholder="digite edad " type="number" />
+        </label>
+    </div> -->
+    <!-- <div class="form-group">
+        <label>Prioritario:
+            <input type="checkbox" class="form-control" [(ngModel)]="task.priority">
+        </label>
+    </div> -->
+    <div class="form-group">
+        <button (click)="update()" class="btn btn-primary">Actualizar</button>
+        <button (click)="delete()" class="btn btn-primary">Eliminar</button>
+    </div>
+</div>
